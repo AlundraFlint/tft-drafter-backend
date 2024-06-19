@@ -21,7 +21,7 @@ public class TraitLevelService {
 
     public void createTraitLevel(TraitLevel traitLevel) {
         if(traitLevel.getValeur() <= 0) {
-            //erreur à gérer
+            //erreur à gérer j'ai fais une modification ici
         } else if (traitLevel.getColor() == null || Objects.equals(traitLevel.getColor(), "")) {
             //erreur à gérer
         } else if (traitLevel.getTraitId() == null) {
