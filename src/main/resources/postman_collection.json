@@ -55,7 +55,12 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\":0,\r\n    \"nom\":\"\",\r\n    \"nomAnglais\":\"Bruiser\"\r\n}"
+							"raw": "    {\r\n        \"id\": 0,\r\n        \"nom\": \"Bodyguard\",\r\n        \"nomAnglais\": \"Bodyguard\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
 							"raw": "localhost:8080/api/trait",
@@ -131,14 +136,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/traitlevel/1",
+							"raw": "localhost:8080/api/level/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"api",
-								"traitlevel",
+								"level",
 								"1"
 							]
 						}
@@ -146,7 +151,7 @@
 					"response": []
 				},
 				{
-					"name": "Récupérer Traits",
+					"name": "Récupérer Traits Levels",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -199,7 +204,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\":1,\r\n    \"nom\":\"\",\r\n    \"nomAnglais\":\"Bruiser\"\r\n}",
+							"raw": "{\r\n    \"traitId\": {\r\n        \"id\": 2,\r\n        \"nom\": \"Prédestiné\",\r\n        \"nomAnglais\": \"Fated\"\r\n    },\r\n    \"valeur\": 4,\r\n    \"color\": \"argent\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -207,14 +212,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/traitlevel/1",
+							"raw": "localhost:8080/api/level/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"api",
-								"traitlevel",
+								"level",
 								"1"
 							]
 						}
@@ -227,14 +232,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/traitlevel/35",
+							"raw": "localhost:8080/api/level/35",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"api",
-								"traitlevel",
+								"level",
 								"35"
 							]
 						}
@@ -423,7 +428,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nom\":\"Thresh\",\r\n    \"cout\":5,\r\n    \"trait1\":{\r\n        \"id\": 2\r\n    },\r\n    \"trait2\":{\r\n        \"id\": 1\r\n    }\r\n}",
+							"raw": "{\r\n    \"nom\":\"Lucian\",\r\n    \"cout\":5,\r\n    \"trait1\":{\r\n        \"id\": 2\r\n    },\r\n    \"trait2\":{\r\n        \"id\": 1\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
