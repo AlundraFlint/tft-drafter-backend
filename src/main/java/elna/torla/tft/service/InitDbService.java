@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import elna.torla.tft.entities.Champion;
 import elna.torla.tft.entities.Item;
 import elna.torla.tft.entities.Trait;
+import elna.torla.tft.entities.TraitLevel;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -24,8 +25,9 @@ public class InitDbService {
     private TraitService traitService;
     private ItemService itemService;
     private ChampionService championService;
+    private TraitLevelService traitLevelService;
 
-    public InitDbService(TraitService traitService, ItemService itemService, ChampionService championService) {
+    public InitDbService(TraitService traitService, ItemService itemService, ChampionService championService, TraitLevelService traitLevelService) {
         this.traitsFr = new ObjectMapper();;
         this.traitsEn = new ObjectMapper();;
         this.itemsFr = new ObjectMapper();;
@@ -35,6 +37,7 @@ public class InitDbService {
         this.traitService = traitService;
         this.itemService = itemService;
         this.championService = championService;
+        this.traitLevelService = traitLevelService;
     }
 
     public void initDatabase() {
@@ -121,8 +124,6 @@ public class InitDbService {
         for (JsonNode championEn : dataChampionsEn){
             createOrUpdateChampionFromNode(championEn,"en");
         }
-
-
     }
 
     private void createOrUpdateTraitFromNode (JsonNode trait, String language)
@@ -142,6 +143,11 @@ public class InitDbService {
                 }
                 traitInDb.setUrlImage(urlImage);
                 this.traitService.updateTrait(traitInDb.getId(),traitInDb);
+
+                JsonNode palliers = trait.get("palliers");
+                for (JsonNode pallier:palliers){
+                    createOrUpdateTraitPallierFromNode(pallier,traitInDb);
+                }
             } else {
                 Trait traitACreer = new Trait();
                 traitACreer.setNom(name);
@@ -149,8 +155,21 @@ public class InitDbService {
                 traitACreer.setRiotId(riotId);
                 traitACreer.setUrlImage(urlImage);
                 this.traitService.createTrait(traitACreer);
+
+                JsonNode palliers = trait.get("palliers");
+                for (JsonNode pallier:palliers){
+                    createOrUpdateTraitPallierFromNode(pallier,traitACreer);
+                }
             }
         }
+    }
+
+    private void createOrUpdateTraitPallierFromNode (JsonNode pallier, Trait trait)
+    {
+        int value = pallier.get("value").asInt();
+        String color = pallier.get("color").asText();
+        TraitLevel traitLevel= new TraitLevel(0,trait,value,color);
+        this.traitLevelService.createTraitLevel(traitLevel);
     }
 
     private void createOrUpdateItemFromNode (JsonNode item, String language)
