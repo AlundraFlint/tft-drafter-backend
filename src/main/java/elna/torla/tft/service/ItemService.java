@@ -60,6 +60,11 @@ public class ItemService {
         return optionalItem.orElse(null);
     }
 
+    public Item getItemByRiotId(String riotId) {
+        Optional<Item> optionalItem = Optional.ofNullable(this.itemRepository.findByRiotId(riotId));
+        return optionalItem.orElse(null);
+    }
+
     public void updateItem(int id, Item item) {
         Item itemAUpdate = this.getItem(id);
         if (itemAUpdate.getId() == item.getId()) {

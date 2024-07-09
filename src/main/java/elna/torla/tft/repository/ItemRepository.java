@@ -1,5 +1,6 @@
 package elna.torla.tft.repository;
 
+import elna.torla.tft.entities.Champion;
 import elna.torla.tft.entities.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -11,5 +12,6 @@ public interface ItemRepository extends JpaRepository<Item, Integer> {
     List<Item> findByNomContaining(String nom);
     List<Item> findByNomAnglaisContaining(String nomAnglais);
     List<Item> findByNomContainingAndNomAnglaisContains(String nom,String nomAnglais);
+    Item findByRiotId(String riotId);
 
 }

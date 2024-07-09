@@ -29,17 +29,17 @@ public class Champion {
     @JoinColumn(name = "TRAIT_ID_3")
     private Trait trait3;
 
-    @Column(name = "NOM_IMAGE")
-    private String nomImage;
+    @Column(name = "URL_IMAGE")
+    private String urlImage;
 
-    @Column(name = "NOM_ICONE")
-    private String nomIcone;
+    @Column(name = "URL_ICONE")
+    private String urlIcone;
 
     public Champion(){
 
     }
 
-    public Champion(int id, String riotId, String nom, String nomAnglais, int cout, Trait trait1, Trait trait2, Trait trait3, String nomImage, String nomIcone) {
+    public Champion(int id, String riotId, String nom, String nomAnglais, int cout, Trait trait1, Trait trait2, Trait trait3, String urlImage, String urlIcone) {
         this.id = id;
         this.riotId = riotId;
         this.nom = nom;
@@ -48,8 +48,8 @@ public class Champion {
         this.trait1 = trait1;
         this.trait2 = trait2;
         this.trait3 = trait3;
-        this.nomImage = nomImage;
-        this.nomIcone = nomIcone;
+        this.urlImage = urlImage;
+        this.urlIcone = urlIcone;
     }
 
     public int getId() {
@@ -116,19 +116,19 @@ public class Champion {
         this.trait3 = trait3;
     }
 
-    public String getNomImage() {
-        return nomImage;
+    public String getUrlImage() {
+        return urlImage;
     }
 
-    public void setNomImage(String nomImage) {
-        this.nomImage = nomImage;
+    public void setUrlImage(String urlImage) {
+        this.urlImage = urlImage;
     }
 
-    public String getNomIcone() {
-        return nomIcone;
+    public String getUrlIcone() {
+        return urlIcone;
     }
 
-    public void setNomIcone(String nomIcone) {
-        this.nomIcone = nomIcone;
+    public void setUrlIcone(String urlIcone) {
+        this.urlIcone = urlIcone;
     }
 }

@@ -16,18 +16,18 @@ public class Trait {
     @Column(name = "NOM_ANGLAIS")
     private String nomAnglais;
 
-    @Column(name = "NOM_IMAGE")
-    private String nomImage;
+    @Column(name = "URL_IMAGE")
+    private String urlImage;
 
     public Trait() {
     }
 
-    public Trait(int id, String riotId, String nom, String nomAnglais, String nomImage) {
+    public Trait(int id, String riotId, String nom, String nomAnglais, String urlImage) {
         this.id = id;
         this.riotId = riotId;
         this.nom = nom;
         this.nomAnglais = nomAnglais;
-        this.nomImage = nomImage;
+        this.urlImage = urlImage;
     }
 
     public int getId() {
@@ -62,11 +62,11 @@ public class Trait {
         this.nomAnglais = nomAnglais;
     }
 
-    public String getNomImage() {
-        return nomImage;
+    public String getUrlImage() {
+        return urlImage;
     }
 
-    public void setNomImage(String nomImage) {
-        this.nomImage = nomImage;
+    public void setUrlImage(String urlImage) {
+        this.urlImage = urlImage;
     }
 }

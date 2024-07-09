@@ -1,6 +1,7 @@
 package elna.torla.tft.service;
 
 import elna.torla.tft.entities.Champion;
+import elna.torla.tft.entities.Item;
 import elna.torla.tft.entities.Trait;
 import elna.torla.tft.repository.ChampionRepository;
 import org.springframework.stereotype.Service;
@@ -64,6 +65,11 @@ public class ChampionService {
     public Champion getChampion(int id) {
         Optional<Champion> champion = championRepository.findById(id);
         return champion.orElse(null);
+    }
+
+    public Champion getChampionByRiotId(String riotId) {
+        Optional<Champion> optionalChampion = Optional.ofNullable(this.championRepository.findByRiotId(riotId));
+        return optionalChampion.orElse(null);
     }
 
     public void updateChampion(int id, Champion champion) {

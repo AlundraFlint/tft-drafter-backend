@@ -7,6 +7,31 @@
 	},
 	"item": [
 		{
+			"name": "Init",
+			"item": [
+				{
+					"name": "Initialiser Database",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/init/database",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"init",
+								"database"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Traits",
 			"item": [
 				{
@@ -493,31 +518,6 @@
 								"api",
 								"trait",
 								"35"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Init",
-			"item": [
-				{
-					"name": "Initialiser Database",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/api/init/database",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"init",
-								"database"
 							]
 						}
 					},

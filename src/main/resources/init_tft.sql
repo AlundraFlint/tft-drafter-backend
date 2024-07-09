@@ -5,7 +5,7 @@ CREATE TABLE TFT.TRAITS(
     RIOT_ID     varchar(80),
     NOM         varchar(80),
     NOM_ANGLAIS varchar(80),
-    NOM_IMAGE   varchar(255)
+    URL_IMAGE   varchar(255)
 );
 
 CREATE TABLE TFT.CHAMPIONS(
@@ -17,8 +17,8 @@ CREATE TABLE TFT.CHAMPIONS(
     TRAIT_ID_1  integer,
     TRAIT_ID_2  integer,
     TRAIT_ID_3  integer,
-    NOM_IMAGE   varchar(255),
-    NOM_ICONE   varchar(255),
+    URL_IMAGE   varchar(255),
+    URL_ICONE   varchar(255),
     CONSTRAINT  trait1_fk FOREIGN KEY (TRAIT_ID_1) REFERENCES TRAITS(ID),
     CONSTRAINT  trait2_fk FOREIGN KEY (TRAIT_ID_2) REFERENCES TRAITS(ID),
     CONSTRAINT  trait3_fk FOREIGN KEY (TRAIT_ID_3) REFERENCES TRAITS(ID)
@@ -30,7 +30,7 @@ CREATE TABLE TFT.ITEMS(
     NOM         varchar(80),
     NOM_ANGLAIS varchar(80),
     TRAIT_BONUS integer,
-    NOM_IMAGE   varchar(255),
+    URL_IMAGE   varchar(255),
     CONSTRAINT  traitbonus_fk FOREIGN KEY (TRAIT_BONUS) REFERENCES TRAITS(ID)
 );
 

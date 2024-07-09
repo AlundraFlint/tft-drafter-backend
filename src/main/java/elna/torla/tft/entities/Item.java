@@ -20,20 +20,20 @@ public class Item {
     @JoinColumn(name = "TRAIT_BONUS")
     private Trait traitBonus;
 
-    @Column(name = "NOM_IMAGE")
-    private String nomImage;
+    @Column(name = "URL_IMAGE")
+    private String urlImage;
 
     public Item() {
 
     }
 
-    public Item(int id, String riotId, String nom, String nomAnglais, Trait traitBonus, String nomImage) {
+    public Item(int id, String riotId, String nom, String nomAnglais, Trait traitBonus, String urlImage) {
         this.id = id;
         this.riotId = riotId;
         this.nom = nom;
         this.nomAnglais = nomAnglais;
         this.traitBonus = traitBonus;
-        this.nomImage = nomImage;
+        this.urlImage = urlImage;
     }
 
     public int getId() {
@@ -76,11 +76,11 @@ public class Item {
         this.traitBonus = traitBonus;
     }
 
-    public String getNomImage() {
-        return nomImage;
+    public String getUrlImage() {
+        return urlImage;
     }
 
-    public void setNomImage(String nomImage) {
-        this.nomImage = nomImage;
+    public void setUrlImage(String urlImage) {
+        this.urlImage = urlImage;
     }
 }

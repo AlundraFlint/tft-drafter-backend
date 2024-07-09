@@ -5,4 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ChampionRepository extends JpaRepository<Champion, Integer> {
     public Champion findByNom(String nom);
+    public Champion findByRiotId(String riotId);
 }

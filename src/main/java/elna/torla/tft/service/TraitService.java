@@ -57,6 +57,16 @@ public class TraitService {
         return optionalTrait.orElse(null);
     }
 
+    public Trait getTraitByRiotId(String riotId) {
+        Optional<Trait> optionalTrait = Optional.ofNullable(this.traitRepository.findByRiotId(riotId));
+        return optionalTrait.orElse(null);
+    }
+
+    public Trait getTraitByNomAnglais(String nomAnglais) {
+        Optional<Trait> optionalTrait = Optional.ofNullable(this.traitRepository.findByNomAnglais(nomAnglais));
+        return optionalTrait.orElse(null);
+    }
+
     public void updateTrait(int id, Trait trait) {
         Trait traitAUpdate = this.getTrait(id);
         if (traitAUpdate.getId() == trait.getId()) {

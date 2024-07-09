@@ -1,0 +1,1043 @@
+{
+  "type": "tft-champion",
+  "version": "14.13.1",
+  "data": {
+    "TFT11_Aatrox": {
+      "id": "TFT11_Aatrox",
+      "name": "Aatrox",
+      "tier": 2,
+	  "trait1":"TFT11_Ghostly",
+	  "trait2":"TFT11_InkShadow",
+	  "trait3":"TFT11_Bruiser",
+      "image": {
+        "full": "TFT11_Aatrox.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 288,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Ahri": {
+      "id": "TFT11_Ahri",
+      "name": "Ahri",
+      "tier": 1,
+	  "trait1":"TFT11_Fated",
+	  "trait2":"TFT11_Arcanist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Ahri.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 336,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Amumu": {
+      "id": "TFT11_Amumu",
+      "name": "Amumu",
+      "tier": 3,
+	  "trait1":"TFT11_Porcelain",
+	  "trait2":"TFT11_Warden",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Amumu.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 384,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Annie": {
+      "id": "TFT11_Annie",
+      "name": "Annie",
+      "tier": 4,
+	  "trait1":"TFT11_Fortune",
+	  "trait2":"TFT11_Invoker",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Annie.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 432,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Aphelios": {
+      "id": "TFT11_Aphelios",
+      "name": "Aphelios",
+      "tier": 3,
+	  "trait1":"TFT11_Fated",
+	  "trait2":"TFT11_Sniper",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Aphelios.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 0,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Ashe": {
+      "id": "TFT11_Ashe",
+      "name": "Ashe",
+      "tier": 4,
+	  "trait1":"TFT11_Porcelain",
+	  "trait2":"TFT11_Sniper",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Ashe.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 48,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Alune": {
+      "id": "TFT11_Alune",
+      "name": "Alune",
+      "tier": 3,
+	  "trait1":"TFT11_Umbral",
+	  "trait2":"TFT11_Invoker",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Alune.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 96,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Bard": {
+      "id": "TFT11_Bard",
+      "name": "Bard",
+      "tier": 3,
+	  "trait1":"TFT11_Mythic",
+	  "trait2":"TFT11_Trickshot",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Bard.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 144,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Caitlyn": {
+      "id": "TFT11_Caitlyn",
+      "name": "Caitlyn",
+      "tier": 1,
+	  "trait1":"TFT11_Ghostly",
+	  "trait2":"TFT11_Sniper",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Caitlyn.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 192,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_ChoGath": {
+      "id": "TFT11_ChoGath",
+      "name": "Cho'Gath",
+      "tier": 1,
+	  "trait1":"TFT11_Mythic",
+	  "trait2":"TFT11_Behemoth",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_ChoGath.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 240,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Darius": {
+      "id": "TFT11_Darius",
+      "name": "Darius",
+      "tier": 1,
+	  "trait1":"TFT11_Umbral",
+	  "trait2":"TFT11_Duelist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Darius.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 288,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Galio": {
+      "id": "TFT11_Galio",
+      "name": "Galio",
+      "tier": 4,
+	  "trait1":"TFT11_Storyweaver",
+	  "trait2":"TFT11_Bruiser",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Galio.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 336,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Garen": {
+      "id": "TFT11_Garen",
+      "name": "Garen",
+      "tier": 1,
+	  "trait1":"TFT11_Storyweaver",
+	  "trait2":"TFT11_Warden",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Garen.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 384,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Hwei": {
+      "id": "TFT11_Hwei",
+      "name": "Hwei",
+      "tier": 5,
+	  "trait1":"TFT11_Mythic",
+	  "trait2":"TFT11_Artist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Hwei.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 432,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Illaoi": {
+      "id": "TFT11_Illaoi",
+      "name": "Illaoi",
+      "tier": 3,
+	  "trait1":"TFT11_Ghostly",
+	  "trait2":"TFT11_Arcanist",
+	  "trait3":"TFT11_Warden",
+      "image": {
+        "full": "TFT11_Illaoi.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 0,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Irelia": {
+      "id": "TFT11_Irelia",
+      "name": "Irelia",
+      "tier": 5,
+	  "trait1":"TFT11_Storyweaver",
+	  "trait2":"TFT11_Duelist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Irelia.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 48,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Janna": {
+      "id": "TFT11_Janna",
+      "name": "Janna",
+      "tier": 2,
+	  "trait1":"TFT11_Dragonlord",
+	  "trait2":"TFT11_Invoker",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Janna.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 96,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Kaisa": {
+      "id": "TFT11_Kaisa",
+      "name": "Kai'Sa",
+      "tier": 4,
+	  "trait1":"TFT11_InkShadow",
+	  "trait2":"TFT11_Trickshot",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Kaisa.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 144,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Kayn": {
+      "id": "TFT11_Kayn",
+      "name": "Kayn",
+      "tier": 4,
+	  "trait1":"TFT11_Ghostly",
+	  "trait2":"TFT11_Reaper",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Kayn.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 192,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_KhaZix": {
+      "id": "TFT11_KhaZix",
+      "name": "Kha'Zix",
+      "tier": 1,
+	  "trait1":"TFT11_Heavenly",
+	  "trait2":"TFT11_Reaper",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_KhaZix.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 240,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Kindred": {
+      "id": "TFT11_Kindred",
+      "name": "Kindred",
+      "tier": 2,
+	  "trait1":"TFT11_Fated",
+	  "trait2":"TFT11_Dryad",
+	  "trait3":"TFT11_Reaper",
+      "image": {
+        "full": "TFT11_Kindred.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 288,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_KogMaw": {
+      "id": "TFT11_KogMaw",
+      "name": "Kog'Maw",
+      "tier": 1,
+	  "trait1":"TFT11_Mythic",
+	  "trait2":"TFT11_Invoker",
+	  "trait3":"TFT11_Sniper",
+      "image": {
+        "full": "TFT11_KogMaw.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 336,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_LeeSin": {
+      "id": "TFT11_LeeSin",
+      "name": "Lee Sin",
+      "tier": 4,
+	  "trait1":"TFT11_Dragonlord",
+	  "trait2":"TFT11_Duelist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_LeeSin.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 384,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Lillia": {
+      "id": "TFT11_Lillia",
+      "name": "Lillia",
+      "tier": 4,
+	  "trait1":"TFT11_Mythic",
+	  "trait2":"TFT11_Invoker",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Lillia.png",
+        "sprite": "tft-champion1.png",
+        "group": "tft-champion",
+        "x": 432,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Lissandra": {
+      "id": "TFT11_Lissandra",
+      "name": "Lissandra",
+      "tier": 5,
+	  "trait1":"TFT11_Porcelain",
+	  "trait2":"TFT11_Arcanist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Lissandra.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Lux": {
+      "id": "TFT11_Lux",
+      "name": "Lux",
+      "tier": 2,
+	  "trait1":"TFT11_Porcelain",
+	  "trait2":"TFT11_Arcanist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Lux.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Malphite": {
+      "id": "TFT11_Malphite",
+      "name": "Malphite",
+      "tier": 1,
+	  "trait1":"TFT11_Heavenly",
+	  "trait2":"TFT11_Behemoth",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Malphite.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 96,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Morgana": {
+      "id": "TFT11_Morgana",
+      "name": "Morgana",
+      "tier": 4,
+	  "trait1":"TFT11_Ghostly",
+	  "trait2":"TFT11_Sage",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Morgana.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 144,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Neeko": {
+      "id": "TFT11_Neeko",
+      "name": "Neeko",
+      "tier": 2,
+	  "trait1":"TFT11_Mythic",
+	  "trait2":"TFT11_Heavenly",
+	  "trait3":"TFT11_Arcanist",
+      "image": {
+        "full": "TFT11_Neeko.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 192,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Ornn": {
+      "id": "TFT11_Ornn",
+      "name": "Ornn",
+      "tier": 4,
+	  "trait1":"TFT11_Dryad",
+	  "trait2":"TFT11_Behemoth",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Ornn.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 240,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Qiyana": {
+      "id": "TFT11_Qiyana",
+      "name": "Qiyana",
+      "tier": 2,
+	  "trait1":"TFT11_Heavenly",
+	  "trait2":"TFT11_Duelist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Qiyana.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 288,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Senna": {
+      "id": "TFT11_Senna",
+      "name": "Senna",
+      "tier": 2,
+	  "trait1":"TFT11_InkShadow",
+	  "trait2":"TFT11_Sniper",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Senna.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 336,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Sett": {
+      "id": "TFT11_Sett",
+      "name": "Sett",
+      "tier": 5,
+	  "trait1":"TFT11_Fated",
+	  "trait2":"TFT11_Umbral",
+	  "trait3":"TFT11_Warden",
+      "image": {
+        "full": "TFT11_Sett.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 384,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Shen": {
+      "id": "TFT11_Shen",
+      "name": "Shen",
+      "tier": 2,
+	  "trait1":"TFT11_Ghostly",
+	  "trait2":"TFT11_Behemoth",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Shen.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 432,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Riven": {
+      "id": "TFT11_Riven",
+      "name": "Riven",
+      "tier": 2,
+	  "trait1":"TFT11_Storyweaver",
+	  "trait2":"TFT11_Altruist",
+	  "trait3":"TFT11_Bruiser",
+      "image": {
+        "full": "TFT11_Riven.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 0,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Sivir": {
+      "id": "TFT11_Sivir",
+      "name": "Sivir",
+      "tier": 1,
+	  "trait1":"TFT11_Storyweaver",
+	  "trait2":"TFT11_Trickshot",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Sivir.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 48,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Soraka": {
+      "id": "TFT11_Soraka",
+      "name": "Soraka",
+      "tier": 3,
+	  "trait1":"TFT11_Heavenly",
+	  "trait2":"TFT11_Altruist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Soraka.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 96,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Sylas": {
+      "id": "TFT11_Sylas",
+      "name": "Sylas",
+      "tier": 4,
+	  "trait1":"TFT11_Umbral",
+	  "trait2":"TFT11_Bruiser",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Sylas.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 144,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Syndra": {
+      "id": "TFT11_Syndra",
+      "name": "Syndra",
+      "tier": 4,
+	  "trait1":"TFT11_Fated",
+	  "trait2":"TFT11_Arcanist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Syndra.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 192,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_TahmKench": {
+      "id": "TFT11_TahmKench",
+      "name": "Tahm Kench",
+      "tier": 3,
+	  "trait1":"TFT11_Mythic",
+	  "trait2":"TFT11_Bruiser",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_TahmKench.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 240,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Teemo": {
+      "id": "TFT11_Teemo",
+      "name": "Teemo",
+      "tier": 2,
+	  "trait1":"TFT11_Fortune",
+	  "trait2":"TFT11_Trickshot",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Teemo.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 288,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Thresh": {
+      "id": "TFT11_Thresh",
+      "name": "Thresh",
+      "tier": 3,
+	  "trait1":"TFT11_Fated",
+	  "trait2":"TFT11_Behemoth",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Thresh.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 336,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Tristana": {
+      "id": "TFT11_Tristana",
+      "name": "Tristana",
+      "tier": 3,
+	  "trait1":"TFT11_Fortune",
+	  "trait2":"TFT11_Duelist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Tristana.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 384,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Udyr": {
+      "id": "TFT11_Udyr",
+      "name": "Udyr",
+      "tier": 5,
+	  "trait1":"TFT11_InkShadow",
+	  "trait2":"TFT11_Behemoth",
+	  "trait3":"TFT11_SpiritWalker",
+      "image": {
+        "full": "TFT11_Udyr.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 432,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Volibear": {
+      "id": "TFT11_Volibear",
+      "name": "Volibear",
+      "tier": 3,
+	  "trait1":"TFT11_InkShadow",
+	  "trait2":"TFT11_Duelist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Volibear.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 0,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_WuKong": {
+      "id": "TFT11_WuKong",
+      "name": "Wukong",
+      "tier": 5,
+	  "trait1":"TFT11_Great",
+	  "trait2":"TFT11_Heavenly",
+	  "trait3":"TFT11_Sage",
+      "image": {
+        "full": "TFT11_WuKong.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 48,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Yasuo": {
+      "id": "TFT11_Yasuo",
+      "name": "Yasuo",
+      "tier": 1,
+	  "trait1":"TFT11_Fated",
+	  "trait2":"TFT11_Duelist",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Yasuo.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 96,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Yone": {
+      "id": "TFT11_Yone",
+      "name": "Yone",
+      "tier": 3,
+	  "trait1":"TFT11_Umbral",
+	  "trait2":"TFT11_Reaper",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Yone.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 144,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Yorick": {
+      "id": "TFT11_Yorick",
+      "name": "Yorick",
+      "tier": 2,
+	  "trait1":"TFT11_Umbral",
+	  "trait2":"TFT11_Behemoth",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Yorick.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 192,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Zoe": {
+      "id": "TFT11_Zoe",
+      "name": "Zoe",
+      "tier": 3,
+	  "trait1":"TFT11_Fortune",
+	  "trait2":"TFT11_Storyweaver",
+	  "trait3":"TFT11_Arcanist",
+      "image": {
+        "full": "TFT11_Zoe.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 240,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Zyra": {
+      "id": "TFT11_Zyra",
+      "name": "Zyra",
+      "tier": 2,
+	  "trait1":"TFT11_Storyweaver",
+	  "trait2":"TFT11_Sage",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Zyra.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 288,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_FortuneYord": {
+      "id": "TFT11_FortuneYord",
+      "name": "Kobuko",
+      "tier": 1,
+	  "trait1":"TFT11_Fortune",
+	  "trait2":"TFT11_Bruiser",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Kobuko.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 336,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_RekSai": {
+      "id": "TFT11_RekSai",
+      "name": "Rek'Sai",
+      "tier": 1,
+	  "trait1":"TFT11_Dryad",
+	  "trait2":"TFT11_Bruiser",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_RekSai.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 384,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Xayah": {
+      "id": "TFT11_Xayah",
+      "name": "Xayah",
+      "tier": 5,
+	  "trait1":"TFT11_Dragonlord",
+	  "trait2":"TFT11_Lovers",
+	  "trait3":"TFT11_Trickshot",
+      "image": {
+        "full": "TFT11_XayahRakan.png",
+        "sprite": "tft-champion2.png",
+        "group": "tft-champion",
+        "x": 432,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Gnar": {
+      "id": "TFT11_Gnar",
+      "name": "Gnar",
+      "tier": 2,
+	  "trait1":"TFT11_Dryad",
+	  "trait2":"TFT11_Warden",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Gnar.png",
+        "sprite": "tft-champion3.png",
+        "group": "tft-champion",
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Rakan": {
+      "id": "TFT11_Rakan",
+      "name": "Rakan",
+      "tier": 5,
+	  "trait1":"TFT11_Dragonlord",
+	  "trait2":"TFT11_Lovers",
+	  "trait3":"TFT11_Altruist",
+      "image": {
+        "full": "TFT11_Rakan.png",
+        "sprite": "tft-champion3.png",
+        "group": "tft-champion",
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Jax": {
+      "id": "TFT11_Jax",
+      "name": "Jax",
+      "tier": 1,
+	  "trait1":"TFT11_InkShadow",
+	  "trait2":"TFT11_Warden",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Jax.png",
+        "sprite": "tft-champion3.png",
+        "group": "tft-champion",
+        "x": 96,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Diana": {
+      "id": "TFT11_Diana",
+      "name": "Diana",
+      "tier": 3,
+	  "trait1":"TFT11_Dragonlord",
+	  "trait2":"TFT11_Sage",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Diana.png",
+        "sprite": "tft-champion3.png",
+        "group": "tft-champion",
+        "x": 144,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Azir": {
+      "id": "TFT11_Azir",
+      "name": "Azir",
+      "tier": 5,
+	  "trait1":"TFT11_Dryad",
+	  "trait2":"TFT11_Invoker",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Azir.png",
+        "sprite": "tft-champion3.png",
+        "group": "tft-champion",
+        "x": 192,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_Nautilus": {
+      "id": "TFT11_Nautilus",
+      "name": "Nautilus",
+      "tier": 4,
+	  "trait1":"TFT11_Mythic",
+	  "trait2":"TFT11_Warden",
+	  "trait3":"None",
+      "image": {
+        "full": "TFT11_Nautilus.png",
+        "sprite": "tft-champion3.png",
+        "group": "tft-champion",
+        "x": 240,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    },
+    "TFT11_XayahRakanDummy": {
+      "id": "TFT11_XayahRakanDummy",
+      "name": "Xayah & Rakan",
+      "tier": 5,
+	  "trait1":"TFT11_Dragonlord",
+	  "trait2":"TFT11_Lovers",
+	  "trait3":"TFT11_TrickshotAltruist",
+      "image": {
+        "full": "TFT11_XayahRakan.png",
+        "sprite": "tft-champion3.png",
+        "group": "tft-champion",
+        "x": 288,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      }
+    }
+  }
+}
