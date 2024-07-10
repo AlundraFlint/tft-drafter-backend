@@ -31,7 +31,7 @@ CREATE TABLE TFT.ITEMS(
     NOM_ANGLAIS varchar(80),
     TRAIT_BONUS integer,
     URL_IMAGE   varchar(255),
-    CONSTRAINT  traitbonus_fk FOREIGN KEY (TRAIT_BONUS) REFERENCES TRAITS(ID)
+    CONSTRAINT  traitBonus_fk FOREIGN KEY (TRAIT_BONUS) REFERENCES TRAITS(ID)
 );
 
 CREATE TABLE TFT.TRAITS_LEVEL(
@@ -50,4 +50,27 @@ CREATE TABLE TFT.USERS(
     NICKNAME    varchar(80),
     PASSWORD    varchar(255),
     ADMIN       integer not null default 0
+);
+
+CREATE TABLE TFT.BOARD(
+    ID          integer primary key not null AUTO_INCREMENT,
+    USER_ID     integer,
+    NAME        varchar(80),
+    CONSTRAINT  boardUserId_fk FOREIGN KEY (USER_ID) REFERENCES USERS(ID)
+);
+
+CREATE TABLE TFT.BOARD_SLOT(
+    ID          integer primary key not null AUTO_INCREMENT,
+    BOARD_ID    integer not null,
+    POSITION    integer,
+    CHAMPION_ID integer,
+    ITEM1_ID    integer,
+    ITEM2_ID    integer,
+    ITEM3_ID    integer,
+    IS_MAX      integer,
+    CONSTRAINT  boardId_fk FOREIGN KEY (BOARD_ID) REFERENCES BOARD(ID),
+    CONSTRAINT  boardChampionId_fk FOREIGN KEY (CHAMPION_ID) REFERENCES CHAMPIONS(ID),
+    CONSTRAINT  boardItem1Id_fk FOREIGN KEY (ITEM1_ID) REFERENCES ITEMS(ID),
+    CONSTRAINT  boardItem2Id_fk FOREIGN KEY (ITEM2_ID) REFERENCES ITEMS(ID),
+    CONSTRAINT  boardItem3Id_fk FOREIGN KEY (ITEM3_ID) REFERENCES ITEMS(ID)
 );
