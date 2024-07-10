@@ -247,17 +247,17 @@ public class InitDbService {
         if(!riotId.contains("TFTTutorial")&&
                 !riotId.contains("TFTEvent")) {
             String name = champion.get("name").asText();
-            int cout = champion.get("tier").asInt();
+            int tier = champion.get("tier").asInt();
             JsonNode image = champion.get("image");
             String nameImage = image.get("full").asText();
             String idTrait1 = champion.get("trait1").asText();
             String idTrait2 = champion.get("trait2").asText();
             String idTrait3 = champion.get("trait3").asText();
 
-            String urlIcone = "https://rerollcdn.com/characters/Skin/11/"+ name;
-            urlIcone=urlIcone.replaceAll("'", "");
-            urlIcone=urlIcone.replaceAll("\\s", "");
-            urlIcone+= ".png";
+            String urlIcon = "https://rerollcdn.com/characters/Skin/11/"+ name;
+            urlIcon=urlIcon.replaceAll("'", "");
+            urlIcon=urlIcon.replaceAll("\\s", "");
+            urlIcon+= ".png";
             Champion championInDb = this.championService.getChampionByRiotId(riotId);
             if (championInDb != null) {
                 if (language.equals("fr"))
@@ -280,8 +280,8 @@ public class InitDbService {
                     Trait trait3 = this.traitService.getTraitByRiotId(idTrait3);
                     championInDb.setTrait3(trait3);
                 }
-                championInDb.setCout(cout);
-                championInDb.setUrlIcone(urlIcone);
+                championInDb.setTier(tier);
+                championInDb.setUrlIcon(urlIcon);
 
                 this.championService.updateChampion(championInDb.getId(),championInDb);
             } else {
@@ -293,13 +293,13 @@ public class InitDbService {
                 championACreer.setTrait1(trait1);
                 championACreer.setTrait2(trait2);
                 championACreer.setTrait3(trait3);
-                championACreer.setCout(cout);
+                championACreer.setTier(tier);
 
                 championACreer.setNom(name);
                 championACreer.setNomAnglais(name);
                 championACreer.setRiotId(riotId);
                 championACreer.setUrlImage(nameImage);
-                championACreer.setUrlIcone(urlIcone);
+                championACreer.setUrlIcon(urlIcon);
                 this.championService.createChampion(championACreer);
             }
         }

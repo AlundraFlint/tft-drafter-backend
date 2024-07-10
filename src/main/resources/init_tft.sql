@@ -13,12 +13,12 @@ CREATE TABLE TFT.CHAMPIONS(
     RIOT_ID     varchar(80),
     NOM         varchar(80),
     NOM_ANGLAIS varchar(80),
-    COUT        integer,
+    TIER        integer,
     TRAIT_ID_1  integer,
     TRAIT_ID_2  integer,
     TRAIT_ID_3  integer,
     URL_IMAGE   varchar(255),
-    URL_ICONE   varchar(255),
+    URL_ICON    varchar(255),
     CONSTRAINT  trait1_fk FOREIGN KEY (TRAIT_ID_1) REFERENCES TRAITS(ID),
     CONSTRAINT  trait2_fk FOREIGN KEY (TRAIT_ID_2) REFERENCES TRAITS(ID),
     CONSTRAINT  trait3_fk FOREIGN KEY (TRAIT_ID_3) REFERENCES TRAITS(ID)
@@ -45,8 +45,9 @@ CREATE TABLE TFT.TRAITS_LEVEL(
 CREATE TABLE TFT.USERS(
     ID          integer primary key not null AUTO_INCREMENT,
     EMAIL       varchar(255),
-    NOM         varchar(80),
-    PRENOM      varchar(80),
-    PSEUDO      varchar(80),
+    FIRSTNAME   varchar(80),
+    LASTNAME    varchar(80),
+    NICKNAME    varchar(80),
+    PASSWORD    varchar(255),
     ADMIN       integer not null default 0
 );

@@ -24,8 +24,8 @@ public class ChampionController {
     }
 
     @GetMapping(produces = APPLICATION_JSON_VALUE)
-    public List<Champion> getChampions(@RequestParam(required = false) String nom,@RequestParam(required = false) Integer cout,@RequestParam(required = false) String trait) {
-        return this.championService.getChampions(nom, cout, trait);
+    public List<Champion> getChampions(@RequestParam(required = false) String nom,@RequestParam(required = false) Integer tier,@RequestParam(required = false) String trait) {
+        return this.championService.getChampions(nom, tier, trait);
     }
 
     @GetMapping(path = "{id}", produces = APPLICATION_JSON_VALUE)

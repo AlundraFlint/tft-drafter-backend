@@ -17,7 +17,7 @@ public class Champion {
     @Column(name = "NOM_ANGLAIS")
     private String nomAnglais;
 
-    private int cout;
+    private int tier;
 
     @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
     @JoinColumn(name = "TRAIT_ID_1")
@@ -32,24 +32,24 @@ public class Champion {
     @Column(name = "URL_IMAGE")
     private String urlImage;
 
-    @Column(name = "URL_ICONE")
-    private String urlIcone;
+    @Column(name = "URL_ICON")
+    private String urlIcon;
 
     public Champion(){
 
     }
 
-    public Champion(int id, String riotId, String nom, String nomAnglais, int cout, Trait trait1, Trait trait2, Trait trait3, String urlImage, String urlIcone) {
+    public Champion(int id, String riotId, String nom, String nomAnglais, int tier, Trait trait1, Trait trait2, Trait trait3, String urlImage, String urlIcon) {
         this.id = id;
         this.riotId = riotId;
         this.nom = nom;
         this.nomAnglais = nomAnglais;
-        this.cout = cout;
+        this.tier = tier;
         this.trait1 = trait1;
         this.trait2 = trait2;
         this.trait3 = trait3;
         this.urlImage = urlImage;
-        this.urlIcone = urlIcone;
+        this.urlIcon = urlIcon;
     }
 
     public int getId() {
@@ -84,12 +84,12 @@ public class Champion {
         this.nomAnglais = nomAnglais;
     }
 
-    public int getCout() {
-        return cout;
+    public int getTier() {
+        return tier;
     }
 
-    public void setCout(int cout) {
-        this.cout = cout;
+    public void setTier(int tier) {
+        this.tier = tier;
     }
 
     public Trait getTrait1() {
@@ -124,11 +124,11 @@ public class Champion {
         this.urlImage = urlImage;
     }
 
-    public String getUrlIcone() {
-        return urlIcone;
+    public String getUrlIcon() {
+        return urlIcon;
     }
 
-    public void setUrlIcone(String urlIcone) {
-        this.urlIcone = urlIcone;
+    public void setUrlIcon(String urlIcon) {
+        this.urlIcon = urlIcon;
     }
 }

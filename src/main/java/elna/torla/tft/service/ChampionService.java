@@ -23,7 +23,7 @@ public class ChampionService {
     public void createChampion(Champion champion) {
         if(champion.getNom() == null || champion.getNom().isEmpty()) {
             // erreur à gérer
-        } else if (champion.getCout() < 1 || champion.getCout() > 5) {
+        } else if (champion.getTier() < 1 || champion.getTier() > 5) {
             // erreur à gérer
         } else if (champion.getTrait1() == null) {
             //erreur à gérer
@@ -58,7 +58,7 @@ public class ChampionService {
         }
     }
 
-    public List<Champion> getChampions(String nom, Integer cout, String trait) {
+    public List<Champion> getChampions(String nom, Integer tier, String trait) {
         return this.championRepository.findAll();
     }
 
@@ -98,7 +98,7 @@ public class ChampionService {
                     } else {
 
                         championAUpdate.setNom(champion.getNom());
-                        championAUpdate.setCout(champion.getCout());
+                        championAUpdate.setTier(champion.getTier());
                         championAUpdate.setTrait1(trait1bis);
                         championAUpdate.setTrait2(trait2bis);
                         championAUpdate.setTrait3(trait3bis);
