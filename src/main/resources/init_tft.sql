@@ -41,3 +41,12 @@ CREATE TABLE TFT.TRAITS_LEVEL(
     COLOR       varchar(80),
     CONSTRAINT  trait_fk FOREIGN KEY (TRAIT_ID) REFERENCES TRAITS(ID)
 );
+
+CREATE TABLE TFT.USERS(
+    ID          integer primary key not null AUTO_INCREMENT,
+    EMAIL       varchar(255),
+    NOM         varchar(80),
+    PRENOM      varchar(80),
+    PSEUDO      varchar(80),
+    ADMIN       integer not null default 0
+);
