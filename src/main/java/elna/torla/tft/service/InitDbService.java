@@ -169,7 +169,7 @@ public class InitDbService {
         int value = pallier.get("value").asInt();
         String color = pallier.get("color").asText();
         TraitLevel traitLevel= new TraitLevel(0,trait,value,color);
-        this.traitLevelService.createTraitLevel(traitLevel);
+        this.traitLevelService.createTraitLevel(trait.getId(), traitLevel);
     }
 
     private void createOrUpdateItemFromNode (JsonNode item, String language)

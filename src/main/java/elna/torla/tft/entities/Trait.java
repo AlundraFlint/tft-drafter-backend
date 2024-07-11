@@ -2,6 +2,8 @@ package elna.torla.tft.entities;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name="TRAITS")
 public class Trait {
@@ -19,15 +21,19 @@ public class Trait {
     @Column(name = "URL_IMAGE")
     private String urlImage;
 
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "traitId", cascade = CascadeType.ALL)
+    private List<TraitLevel> traitLevels;
+
     public Trait() {
     }
 
-    public Trait(int id, String riotId, String nom, String nomAnglais, String urlImage) {
+    public Trait(int id, String riotId, String nom, String nomAnglais, String urlImage, List<TraitLevel> traitLevels) {
         this.id = id;
         this.riotId = riotId;
         this.nom = nom;
         this.nomAnglais = nomAnglais;
         this.urlImage = urlImage;
+        this.traitLevels = traitLevels;
     }
 
     public int getId() {
@@ -68,5 +74,13 @@ public class Trait {
 
     public void setUrlImage(String urlImage) {
         this.urlImage = urlImage;
+    }
+
+    public List<TraitLevel> getTraitLevels() {
+        return traitLevels;
+    }
+
+    public void setTraitLevels(List<TraitLevel> traitLevels) {
+        this.traitLevels = traitLevels;
     }
 }

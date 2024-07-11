@@ -1,5 +1,6 @@
 package elna.torla.tft.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
@@ -34,6 +35,7 @@ public class TraitLevel {
         this.id = id;
     }
 
+    @JsonIgnore
     public Trait getTraitId() {
         return traitId;
     }
