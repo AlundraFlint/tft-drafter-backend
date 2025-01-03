@@ -3,6 +3,8 @@ package elna.torla.tft.entities;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "BOARD_SLOT")
 public class BoardSlot {
@@ -10,9 +12,9 @@ public class BoardSlot {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
     @JoinColumn(name = "BOARD_ID")
-    private Board board;
+    private Board boardId;
 
     private int position;
 
@@ -20,17 +22,8 @@ public class BoardSlot {
     @JoinColumn(name = "CHAMPION_ID")
     private Champion champion;
 
-    @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
-    @JoinColumn(name = "ITEM1_ID")
-    private Item item1;
-
-    @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
-    @JoinColumn(name = "ITEM2_ID")
-    private Item item2;
-
-    @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
-    @JoinColumn(name = "ITEM3_ID")
-    private Item item3;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "boardSlotId", cascade = CascadeType.ALL)
+    private List<BoardSlotItem> boardSlotsItems;
 
     @Column(name = "IS_MAX")
     private int isMax;
@@ -38,14 +31,12 @@ public class BoardSlot {
     public BoardSlot() {
     }
 
-    public BoardSlot(int id, int position, Board board, Champion champion, Item item1, Item item2, Item item3, int isMax) {
+    public BoardSlot(int id, Board boardId, int position, Champion champion, List<BoardSlotItem> boardSlotsItems, int isMax) {
         this.id = id;
+        this.boardId = boardId;
         this.position = position;
-        this.board = board;
         this.champion = champion;
-        this.item1 = item1;
-        this.item2 = item2;
-        this.item3 = item3;
+        this.boardSlotsItems = boardSlotsItems;
         this.isMax = isMax;
     }
 
@@ -58,12 +49,12 @@ public class BoardSlot {
     }
 
     @JsonIgnore
-    public Board getBoard() {
-        return board;
+    public Board getBoardId() {
+        return boardId;
     }
 
-    public void setBoard(Board board) {
-        this.board = board;
+    public void setBoardId(Board boardId) {
+        this.boardId = boardId;
     }
 
     public int getPosition() {
@@ -82,28 +73,12 @@ public class BoardSlot {
         this.champion = champion;
     }
 
-    public Item getItem1() {
-        return item1;
+    public List<BoardSlotItem> getBoardSlotsItems() {
+        return boardSlotsItems;
     }
 
-    public void setItem1(Item item1) {
-        this.item1 = item1;
-    }
-
-    public Item getItem2() {
-        return item2;
-    }
-
-    public void setItem2(Item item2) {
-        this.item2 = item2;
-    }
-
-    public Item getItem3() {
-        return item3;
-    }
-
-    public void setItem3(Item item3) {
-        this.item3 = item3;
+    public void setBoardSlotsItems(List<BoardSlotItem> boardSlotsItems) {
+        this.boardSlotsItems = boardSlotsItems;
     }
 
     public int getIsMax() {

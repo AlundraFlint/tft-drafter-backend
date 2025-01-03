@@ -64,13 +64,15 @@ CREATE TABLE TFT.BOARD_SLOT(
     BOARD_ID    integer not null,
     POSITION    integer,
     CHAMPION_ID integer,
-    ITEM1_ID    integer,
-    ITEM2_ID    integer,
-    ITEM3_ID    integer,
     IS_MAX      integer,
     CONSTRAINT  boardId_fk FOREIGN KEY (BOARD_ID) REFERENCES BOARD(ID),
-    CONSTRAINT  boardChampionId_fk FOREIGN KEY (CHAMPION_ID) REFERENCES CHAMPIONS(ID),
-    CONSTRAINT  boardItem1Id_fk FOREIGN KEY (ITEM1_ID) REFERENCES ITEMS(ID),
-    CONSTRAINT  boardItem2Id_fk FOREIGN KEY (ITEM2_ID) REFERENCES ITEMS(ID),
-    CONSTRAINT  boardItem3Id_fk FOREIGN KEY (ITEM3_ID) REFERENCES ITEMS(ID)
+    CONSTRAINT  boardChampionId_fk FOREIGN KEY (CHAMPION_ID) REFERENCES CHAMPIONS(ID)
+);
+
+CREATE TABLE TFT.BOARD_SLOT_ITEMS(
+    ID              integer primary key not null AUTO_INCREMENT,
+    BOARD_SLOT_ID   integer not null,
+    ITEM_ID         integer,
+    CONSTRAINT      boardSlotId_fk FOREIGN KEY (BOARD_SLOT_ID) REFERENCES BOARD_SLOT(ID),
+    CONSTRAINT      boardSlotItemId_fk FOREIGN KEY (ITEM_ID) REFERENCES ITEMS(ID)
 );

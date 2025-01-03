@@ -28,12 +28,12 @@ public class UserController {
         this.userService.updateUser(user,id);
     }
 
-    @GetMapping
+    @GetMapping(produces = APPLICATION_JSON_VALUE)
     public List<User> getUsers(@RequestParam(required = false) String nickname){
         return this.userService.getUsers(nickname);
     }
 
-    @GetMapping(path="{id}")
+    @GetMapping(path="{id}", produces = APPLICATION_JSON_VALUE)
     public User getUser(@PathVariable int id){
         return this.userService.getUser(id);
     }
